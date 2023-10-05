@@ -47,7 +47,7 @@ app.use('/api/tareas', tareaRoutes);
 
 // CREAR PARA LA VARIABLE DEL PUERTO
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT ?? 8080;
 
 const servidor = app.listen(PORT, () => {
     //console.log('Puerto corriendo en el puerto 4000');
