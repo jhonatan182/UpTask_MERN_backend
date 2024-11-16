@@ -11,6 +11,7 @@ const emailRegistro = async (datos) => {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
     },
+    from: process.env.EMAIL_USER,
   });
 
   // informacion del email
@@ -41,6 +42,7 @@ const emailOlvidePassword = async (datos) => {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
     },
+    from: process.env.EMAIL_USER,
   });
 
   // informacion del email
